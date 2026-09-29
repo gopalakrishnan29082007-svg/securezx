@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Auth App</title>
+    <script type="text/javascript">
+      // Decodes the path that public/404.html encoded, so React Router
+      // sees the real URL (e.g. /dashboard) after a GitHub Pages redirect.
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <script type="module" crossorigin src="/securezx/assets/index-BRYXUxFe.js"></script>
+    <link rel="stylesheet" crossorigin href="/securezx/assets/index-BHH42Gj3.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
